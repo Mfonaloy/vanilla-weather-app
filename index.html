@@ -14,23 +14,31 @@
     <title>Weather App</title>
 </head>
 <body>
-  <div class="container">
-    <div class="weather-app">
+<div class="container">
+  <div class="weather-app-wrapper">
+<div class="weather-app">
+  <div class="overview">
     <h1>
       Abuja 
     </h1>
-    <ul>
+     <ul>
       <li>
         Tuesday 3:54
       </li>
       <li>
         Clear
       </li>
-    </ul>
+     </ul>
+  </div>
     <div class="row">
       <div class="col-6">
-      <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Clear" />
-      12°C | °F 
+        <div class="clearfix weather-temperature">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" 
+           alt="Clear" 
+           class="float-left"
+          />
+            <strong>12</strong><span class="units">°C |<a href="#">°F</a></span>
+        </div>
       </div>
       <div class="col-6"> 
       <ul>
@@ -45,13 +53,14 @@
         </li>
       </ul>
       </div>
-    </div>
-    <small>
+     </div>
+     </div>
+     <small>
       <a href="https://github.com/Mfonaloy/vanilla-weather-app" target="_blank">
-         Open-source code</a> by Mfon Aloy
-    </small>
-  </div>
+      Open-source code</a> by Mfon Aloy
+     </small>
     </div>
+     </div>
     <script src="src/app.js"></script>
-</body>
+  </body>
 </html> 

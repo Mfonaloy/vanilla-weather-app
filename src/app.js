@@ -22,6 +22,7 @@ function displayTemperature(response) {
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#date");
+
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     cityElement.innerHTML = response.data.name;
     descriptionElement.innerHTML = response.data.weather[0].description;
@@ -32,7 +33,8 @@ function displayTemperature(response) {
 
 
 let apiKey = "2ad3df86f01baa30d925420a827292df";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Abuja&appid=${apiKey}&units=metric`;
+let city = "eket";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 
 axios.get(apiUrl).then(displayTemperature);

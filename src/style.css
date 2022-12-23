@@ -32,16 +32,20 @@ li:first-letter{
 .weather-app-wrapper{
     max-width: 600px;
     margin: 30px auto;
+    
 }
 
 .weather-app{
     padding: 20px;
     border: 1px solid #dadde1;
     border-radius: 5px;
+    background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+    background-image: url(https://images.pexels.com/photos/12527029/pexels-photo-12527029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
 .overview{
     margin-bottom: 20px;
+    text-shadow: #000;
 }
 
 .weather-temperature img{
@@ -62,6 +66,11 @@ li:first-letter{
     position: relative;
     font-size: 16px;
     top: -34px;
+}
+
+.forecast{
+    font-size: 40px;
+    font-weight: 300;
 }
 
 .weather-temperature .active {

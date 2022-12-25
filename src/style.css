@@ -97,6 +97,7 @@ color: #000;
 .weather-forecast-date {
     font-size: 16px;
     opacity: 0.5;
+    font-weight: 800;
 }
 
 .weather-forecast-temperature-min {
